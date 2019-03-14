@@ -1,0 +1,20 @@
+{
+  "name": "testpgconnection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "—zip-file fileb: //Lambda-Deployment.zip",
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.log"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.415.0",
+    "convert-csv-to-array": "^1.0.3",
+    "lambda-multipart-parser": "0.0.2",
+    "mysql": "^2.16.0",
+    "xlsx": "^0.14.1"
+  }
+}
